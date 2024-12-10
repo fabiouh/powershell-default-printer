@@ -1,0 +1,13 @@
+{
+    "Networks": [
+        {
+            "NetworkName": "Network 1",
+            "Printer": "Printer1"
+        },
+        {
+            "NetworkName": "Network 2",
+            "Printer": "Printer2"
+        }
+    ],
+    "FallbackPrinter": "FallbackPrinter"
+}
