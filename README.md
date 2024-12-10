@@ -8,4 +8,4 @@ A simple PowerShell script to set the default printer on Windows.
 4. Create a new Task
 5. Name: SetDefaultPrinter
 6. Trigger: At logon
-7. Action: powershell.exe -NoProfile -ExecutionPolicy Bypass -File "C:\Path\to\SetDefaultPrinter.ps1"
+7. Action: `powershell.exe -NoProfile -ExecutionPolicy Bypass -File "C:\Path\to\SetDefaultPrinter.ps1"`
