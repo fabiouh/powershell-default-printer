@@ -50,7 +50,8 @@ if(-Not $matchedPrinter) {
 
 if($matchedPrinter) {
     try {
-        (Get-Printer -Name $matchedPrinter | Set-Printer -Default)
+        $printer = Get-WmiObject -Query "SELECT * FROM Win32_Printer WHERE Name = '$matchedPrinter'"
+        $printer.SetDefaultPrinter() | Out-Null
         Write-Host "Default printer set to: $matchedPrinter"- ForegroundColor Green
         Exit 0
     } catch {
